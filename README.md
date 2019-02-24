@@ -3,8 +3,15 @@
 
 
 ## 2019
+* **January - [3D Pose Estimation](https://arxiv.org/pdf/1901.03798.pdf)**
 
+A pose estimator takes a video as an input, and outputs a figure that corresponds to the pose of the human individuals present in the video. 
 
+Current difficulties with creating a reliable and real-time 3D pose estimator include the fact that there is little training data, alongside the fact that occlusions must be taken to account. For example, if a particular body part is blocked from view, a pose estimator must still be able to infer its position from the position of the rest of the body.
+
+This model outperforms all present models as it creates both 2D and 3D representations of the poses. It uses an initial 2D pose estimation, and then utilises a neural network that converts this 2D estimation into a 3D form. It then uses a 3D-to-2D neural network network to convert the pose back into 2D form, which helps to refine the intermediate 3D pose prediction via a self-supervised correction mechanism that can detect the accuracy of the first 2D-to-3D neural network. 
+
+The networks allows for the pose estimation to be obtained in about 50 milliseconds, which is nearly 20 frames per second. This is close to real-time, and is suitable for many of the applications of pose estimation.
 
 ## 2018
 * **April - [ProGanSR](https://arxiv.org/pdf/1804.02900.pdf)**
@@ -20,6 +27,7 @@ The paper provides accurate human pose estimation through walls and occlusions. 
 
 In the network, there is a teacher network that looks at the colour image of the wall, and predicts the pose that the human is in. There is also a student network that has the signal as an input, and it learns what the different distributions mean, and how they relate to different human positions and poses. The teacher network shows the student network the correct results, and the student learns how to produce them from radio signals instead of images.
 
+Besides being used for motion capture in interactive video games, as well as helping create special effects for movies, pose estimation can also be used to help detect issues with a patient’s posture, track the activity of animals, understanding sign language and pedestrian activity in self-driving cars. 
 
 * **July - [Phrank](https://www.nature.com/articles/s41436-018-0072-y)**
 
