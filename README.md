@@ -29,6 +29,16 @@ In the network, there is a teacher network that looks at the colour image of the
 
 Besides being used for motion capture in interactive video games, as well as helping create special effects for movies, pose estimation can also be used to help detect issues with a patient’s posture, track the activity of animals, understanding sign language and pedestrian activity in self-driving cars. 
 
+* **July - [Benchmarking Neural Network Robustness to Corruption & Perturbations](https://arxiv.org/pdf/1807.01697.pdf)**
+
+This paper underlines a method to evaluate the performance of Image Classifiers in terms of their ability to withstand corruptions and perturbations. It creates two datasets - ImageNet-C (for corruptions) and ImageNet-P (for petrurbations) - which help test the robustness of Image Classifiers to such variations, which are common in real-life scenarios.
+
+In the context of images, a corruption describes a modification to a base image through distorting its details. The paper utilises 15 different corruption functions on ImageNet mages, each of 5 levels of severity. These corruption functions describe methods including Gaussian Noise, the addition of snow and pixelation.
+
+A perturbation describes the distorting of images by varying its appearance through transformative methods. The paper utilises 8 different perturbation functions on ImageNet images, including zoom, tilt and translation.
+
+Testing the Classifier with images obtained from the ImageNet-C and ImageNet-P datasets, the paper creates a robustness score regarding a its robustness to both corruption and perturbation by averaging its accuracy over all functions of each type and over all levels of severity.
+
 * **July - [Phrank](https://www.nature.com/articles/s41436-018-0072-y)**
 
 The algorithm produced automates the most labor-intensive part of genetic diagnosis, that of matching a patient’s genetic sequence and symptoms to a disease described in the scientific literature. Without computer help, this match-up process takes 20 to 40 hours per patient - the process involves the expert looking at a list of around 100 of the patient’s suspicious-looking mutations, making an educated guess about which one might cause disease, checking  scientific literature, and then moving on to the next one. The algorithm developed by Bejerano’s team cuts the time needed by 90 percent. 
