@@ -54,7 +54,7 @@ This research paper, authored by scientists at processor and graphics card compa
   - It can perform interpolation. This means that if we have two images A and B, the generator can create intermediate images that map one to another. It can even change the gender in the process. All intermediate images look real too.
   
   
-## 2019
+## 2017
 
 * **September - [Deep Feature Consistent Deep Image Transformations (DFC-DIT)](https://arxiv.org/pdf/1707.09482.pdf)**
 
