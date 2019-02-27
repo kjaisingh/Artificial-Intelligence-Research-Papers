@@ -52,4 +52,12 @@ This research paper, authored by scientists at processor and graphics card compa
   - It can combine different aspects of images. For example, if one wished to overlay the gender of one face with the face of another, the generator can do so. The aspects that can be transferred include gender, hair length, pose and the presence of glasses.
   - The parameters can be controlled one by one without modifying the core content of an image. For example, the presence of a stubble can be modified.
   - It can perform interpolation. This means that if we have two images A and B, the generator can create intermediate images that map one to another. It can even change the gender in the process. All intermediate images look real too.
+  
+  
+## 2019
 
+* **September - [Deep Feature Consistent Deep Image Transformations (DFC-DIT)](https://arxiv.org/pdf/1707.09482.pdf)**
+
+Say you need to downscale an image of yours without reducing the accuracy of the main features, or if you wished to remove RGB colours from an image, or if you display an image of high dynamic range on a screen that doesn’t support the range. Though there are hundreds of existing structures that do these, this paper describes a method that does these exceptionally well in comparison to current methods. 
+
+The paper suggests a Deep Feature Consistent Deep Image Transformation (DFC-DIT) framework. It utilises a Convolutional Neural Network (CNN) that produces three outputs for an input image - a downscaled version, a decolorised version and a HDR tone mapped version. It also uses another pretrained and fixed deep CNN that employs the deep feature consistency principle - this ensures that all main features are preserved in the image. 
