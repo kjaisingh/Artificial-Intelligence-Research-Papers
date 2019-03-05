@@ -13,6 +13,7 @@ This model outperforms all present models as it creates both 2D and 3D represent
 
 The networks allows for the pose estimation to be obtained in about 50 milliseconds, which is nearly 20 frames per second. This is close to real-time, and is suitable for many of the applications of pose estimation.
 
+
 ## 2018
 * **April - [ProGanSR](https://arxiv.org/pdf/1804.02900.pdf)**
 
@@ -20,6 +21,13 @@ To acheive super-resolution, which allows the conversion of low-resolution image
 
 The paper  uses a GAN rather than simply a CNN. Compared to state-of-the-art models, the images produced using the method proposed in this paper are comprehended with a slightly lower accuracy, however they are produced at 5 times the speed.
 
+* **June - [Do CIFAR-10 Classifiers Generalize to CIFAR-10?](https://arxiv.org/pdf/1806.00451.pdf)**
+
+The ultimate goal of a Machine Learning model is to predict the output accurately on new, unseen instances. When training a Machine Learning model, it is thus crucial that the test data is not involved in the process of creating the model, as this would introduce bias towards the test set. Unfortunately, we typically have limited access to new data from the same distribution, which results in many researchers today using the test set in place of a validation set. This allows for hyperparameters, such as the learning rate, to be optimised in accordance to the distribution of the selected test set.
+
+The research paper proposes a new test set with about 2000 instances which matches the distribution of the test set for the CIFAR-10 dataset, a well-known dataset that many modern image classifier models are tested on. It then evaluates the performance of 30 different modern image classification models. It finds that there is a significant drop from the accuracy in the original test set to the new test set - for instance, VGG and ResNet architectures drop from their well-established 93% accuracy to about 85%. However, the performance of classifiers relative to one another remains more or less constant - thus, the distribution in performance of classifiers can be considered to simply be horizontally shifted.
+
+The results cast doubt on the robustness of current classifiers. The classification accuracy of widely used models drops significantly - for example, the accuracy loss of VGG and ResNet corresponds to multiple years of progress on the CIFAR-10 dataset. The distribution shift thus questions to what extent current models truly generalise.
 
 * **June - [RF-Pose](http://rfpose.csail.mit.edu/)**
 
@@ -44,7 +52,6 @@ Testing the Classifier with images obtained from the ImageNet-C and ImageNet-P d
 The algorithm produced automates the most labor-intensive part of genetic diagnosis, that of matching a patient’s genetic sequence and symptoms to a disease described in the scientific literature. Without computer help, this match-up process takes 20 to 40 hours per patient - the process involves the expert looking at a list of around 100 of the patient’s suspicious-looking mutations, making an educated guess about which one might cause disease, checking  scientific literature, and then moving on to the next one. The algorithm developed by Bejerano’s team cuts the time needed by 90 percent. 
 
 The algorithm’s name, Phrank, a mashup of “phenotype” and “rank,” gives a hint of how it works: it compares a patient’s symptoms and gene data to a medical-literature knowledge base, and then simply generates a ranked list of which rare genetic diseases are most likely to be responsible for the symptoms. Phrank, on average, ranked the true diagnosis 4th on the list of potential diagnoses it generated. 
-
 
 * **December - [Style-Based Generator](https://arxiv.org/pdf/1812.04948.pdf)**
 
