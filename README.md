@@ -62,6 +62,16 @@ This research paper, authored by scientists at processor and graphics card compa
   
   
 ## 2017
+* **April - [Federatred Learning](https://ai.googleblog.com/2017/04/federated-learning-collaborative.html?utm_campaign=the_algorithm.unpaid.engagement&utm_source=hs_email&utm_medium=email&utm_content=70607703&_hsenc=p2ANqtz-9kYBnRclCyRm1_Fweb9tezCh4VeAFJVZTpjvf-fzz2akkq4AGCU5Uhhv-4ApNIZO7vb2ZpigcgT_lU3E_2sF1mtaZzqg&_hsmi=70607705)**
+
+A big problem being faced by organisations working with developing Machine Learning algorithms and systems today regards privacy - consumers are unwilling to allow their data to be viewed by others, as this data is considered sensitive to them. Google AI's new research on Federated Learning proposes a solution to this.
+
+The Federated Learning technique relies on distributed training - it allows for models to be trained independently on a subset of the universal data, and then assembles these independent models into a single, master model. 
+
+There are a couple of use cases for this to better describe how it functions. Firstly, say medical patients are unwilling to have their health records be sent to other hospitals and organisations who they cannot trust. Federated Learning suggests that each hospital construct its own model using the limited patient data that it has, and then it assembles the models of each hospital into a single, unified model using Google's Federated Averaging algorithm. Secondly, say that we wish to train a predictive keyboard to be uniquely suited to our personal typing patterns on our smartphone. We can use a Federated model, which has been trained and compiled from the predictive patterns of many different users and their data, and then pass in our own personal keyboard typing data to update the model to be better suited to our personal typing habits.
+
+Federated Learning technqiues have seen many updates and improvements since, and will certainly remain relevant as AI enters a privacy-centered time in its development.
+
 
 * **September - [Deep Feature Consistent Deep Image Transformations (DFC-DIT)](https://arxiv.org/pdf/1707.09482.pdf)**
 
