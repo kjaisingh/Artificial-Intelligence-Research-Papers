@@ -72,10 +72,13 @@ The framework uses a segmentation network along with a dissection method to iden
 
 * **December - [Style-Based Generator](https://arxiv.org/pdf/1812.04948.pdf)**
 
-This research paper, authored by scientists at processor and graphics card company Nvidia, demonstrates the potential of an alternative generator architecture for generative adversarial networks that borrows from style transfer literature. It allows for specific customisation and control over features within a human face. It has the potential to be applied to other fields, and has thus far been tested successfully on cars and rooms. The generator has three main features:
-  - It can combine different aspects of images. For example, if one wished to overlay the gender of one face with the face of another, the generator can do so. The aspects that can be transferred include gender, hair length, pose and the presence of glasses.
-  - The parameters can be controlled one by one without modifying the core content of an image. For example, the presence of a stubble can be modified.
-  - It can perform interpolation. This means that if we have two images A and B, the generator can create intermediate images that map one to another. It can even change the gender in the process. All intermediate images look real too.
+This research paper, authored by scientists at processor and graphics card company Nvidia, demonstrates the potential of an alternative generator architecture for generative adversarial networks that borrows from style transfer literature. It allows for specific customisation and control over features within a human face. It has the potential to be applied to other fields, and has thus far been tested successfully on cars and rooms. 
+
+The generator can combine different aspects of images. For example, if one wished to overlay the gender of one face with the face of another, the generator can do so. The aspects that can be transferred include gender, hair length, pose and the presence of glasses. 
+
+The parameters of the generator can also be controlled one by one without modifying the core content of an image. For example, the presence of a stubble can be modified.
+
+The generator can also perform interpolation. This means that if we have two images A and B, the generator can create intermediate images that map one to another. It can even change the gender in the process. All intermediate images look real too.
   
   
 ## 2017
