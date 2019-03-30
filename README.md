@@ -28,7 +28,7 @@ The study thus provides a degree of evidence that the apparent flaw with Convolu
 
 To acheive super-resolution, which allows the conversion of low-resolution images to higher-resolution ones, this paper recommends improving the image resolutions through a progressive method. It takes several intermediate steps where the image produced is slightly better than the predecessor, a known as 'curriculum learning'. 
 
-The paper  uses a GAN rather than simply a CNN. Compared to state-of-the-art models, the images produced using the method proposed in this paper are comprehended with a slightly lower accuracy, however they are produced at 5 times the speed.<br/><br/>
+The paper  uses a GAN rather than simply a CNN. Compared to state-of-the-art models, the images produced using the method proposed in this paper are comprehended with a slightly lower accuracy, however they are produced at 5 times the speed.<br/>
 
 * **June - [Do CIFAR-10 Classifiers Generalize to CIFAR-10?](https://arxiv.org/pdf/1806.00451.pdf)**
 
