@@ -14,6 +14,7 @@ This model outperforms all present models as it creates both 2D and 3D represent
 The networks allows for the pose estimation to be obtained in about 50 milliseconds, which is nearly 20 frames per second. This is close to real-time, and is suitable for many of the applications of pose estimation.
 
 * **March - [Humans can decipher adversarial images](https://www.nature.com/articles/s41467-019-08931-6.pdf)**
+
 Though recent Convolutional Neural Network systems have surpassed human performance in image detection problems, a problem does remain - simply modifying a pixel or two in the image can cause the system to classify the image as something vastly different. For example, reconfiguring a pixel or two is all it takes for a computer to classify an apple as a car. This ability to ‘fool’ image recognition systems has been criticised as an indication that such systems are unable to interpret images in the same manner as a human would, though a recent paper suggests that this may not be the case.
 
 In the paper, a pair of cognitive psychologists showed a group of over 1800 subjects images that had already tricked computers into classifying it under the wrong label. They asked people which of two options the computer predicted the object as being - one option being the computer's real conclusion and the other being a random answer. The subjects chose the same answer as computers 75% of the time, and a remarkable 98% of them tended to answer like the computers did.
