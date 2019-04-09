@@ -13,6 +13,22 @@ This model outperforms all present models as it creates both 2D and 3D represent
 
 The networks allows for the pose estimation to be obtained in about 50 milliseconds, which is nearly 20 frames per second. This is close to real-time, and is suitable for many of the applications of pose estimation.<br/>
 
+* **February - [SC-FEGAN: Face-Editing GAN](https://arxiv.org/pdf/1902.06838.pdf)**
+
+This AI is a able to generate realistic images from a set of controllable patterns. It builds on a couple of previous papers in the field - the first is the paper that generates an image from a sparse description (such as a written sentence, and the second is the paper which allows for facial features on images to be customised (such as merging two different faces).
+
+This technique allows us to edit more specific factors - for example, put a smile on someone’s face or remove the sunglasses of an individual. Colour can also be changed - for example, the colour of one’s eye can be manipulated. It is extremely fast, and takes just 50 milliseconds to create these images with 512 x 512 images. 
+
+It has applications in the editing industry in filmmaking, but can also be used by novel consumers who are looking for simple edits to their photos. Though no web app is currently available, it does have its source code publicly-available.
+
+* **February - [Deep Planning Network (PlaNet)](https://www.nature.com/articles/s41467-019-08931-6.pdf)**
+
+Google’s PlaNet AI is intended to learn how to plan a sequence of steps that it must take in order to execute a physical goal - for execute, pole balance or walk like a human. The AI must learn in the same manner as a human would - by looking at the pixels of these images (which requires a visual understanding of the context).
+
+The AI uses a sparse reward method, which means that it barely gets feedback with regards to its performance on these tasks. The key difference, however, between this and classical Reinforcement Learning methods is that this AI uses models for its learning. This means that it doesn’t learn every new task from scratch, but rather uses its rudimentary understanding that it has gained from previous activities (such as the nature of gravity), and applies this in future ones. Thus, it has a head-start when learning it a game, making it often 50 times more efficient than techniques that begin with learning from scratch.
+
+It significantly outperforms other state-of-the-art AI systems in most tasks, such as a cheetah run or human walk. This agent doesn’t require separate training for each activity, as it intermixes its training. Also, it can use just 5 frames of reference for a particular activity in order to learn it, with equates to approximately a fifth of a second of footage. It can then learn how to continue with this activity over a longer period of time.
+
 * **March - [Humans can decipher adversarial images](https://www.nature.com/articles/s41467-019-08931-6.pdf)**
 
 Though recent Convolutional Neural Network systems have surpassed human performance in image detection problems, a problem does remain - simply modifying a pixel or two in the image can cause the system to classify the image as something vastly different. For example, reconfiguring a pixel or two is all it takes for a computer to classify an apple as a car. This ability to ‘fool’ image recognition systems has been criticised as an indication that such systems are unable to interpret images in the same manner as a human would, though a recent paper suggests that this may not be the case.
