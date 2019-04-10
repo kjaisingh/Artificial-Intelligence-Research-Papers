@@ -1,5 +1,5 @@
 # A Beginner's Guide to recent Artificial Intelligence Research Papers
-*This guide is intended to introduce individuals, particularly High School students, to various recent Machine Learning and Artificial Intelligence developments that I find particularly cool, relevant or interesting. Rather than provide an in-depth evaluation and analysis of the theories discussed, this guide simply provides a high-level overview suitable for gaining an intuitive understanding of the papers.*
+*This guide is intended to introduce individuals, particularly high school students who lack university-level mathematics skills, to various recent Machine Learning and Artificial Intelligence developments that I find particularly cool, relevant or interesting. Rather than provide an in-depth evaluation and analysis of the theories discussed, this guide simply provides a high-level overview suitable for gaining an intuitive understanding of the papers.*
 
 
 ## Year-by-Year
