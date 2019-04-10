@@ -2,8 +2,11 @@
 *This guide is intended to introduce individuals, particularly High School students, to various recent Machine Learning and Artificial Intelligence developments that I find particularly cool, relevant or interesting. Rather than provide an in-depth evaluation and analysis of the theories discussed, this guide simply provides a high-level overview suitable for gaining an intuitive understanding of the papers.*
 
 
-# Year-by-Year
-[create an anchor](#2018)
+## Year-by-Year
+* [2019](#2019)
+* [2018](#2018)
+* [2017](#2017)
+
 
 ## 2019
 * **January - [3D Pose Estimation](https://arxiv.org/pdf/1901.03798.pdf)**
