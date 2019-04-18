@@ -35,6 +35,16 @@ The AI uses a sparse reward method, which means that it barely gets feedback wit
 
 It significantly outperforms other state-of-the-art AI systems in most tasks, such as a cheetah run or human walk. This agent doesn’t require separate training for each activity, as it intermixes its training. Also, it can use just 5 frames of reference for a particular activity in order to learn it, with equates to approximately a fifth of a second of footage. It can then learn how to continue with this activity over a longer period of time.
 
+* **February - [NeuroSAT](https://arxiv.org/pdf/1802.03685.pdf)**
+
+Satisfiability Problems (SATs) are a family of problems which prompt us to determine whether or not it is possible for a given formula to return true, when given any possible set of parameters. 
+
+We can take an example: F is true if A is true and not B is true. In this case, the logical outcome for F would equate to true if A were to be true and B were to be false - thus, this problem can be satisfied. The given example is very simple though - NeuroSAT can solve far more complex problems, even those including graphs (for more examples of such problems, see [this](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) link).
+
+When humans try to solve big and complex problems, there is not much of a better method than arbitrary guessing, which would take a nearly infinite amount of time for longer and more complex problems. NeuroSAT, however, solves these problems through the use of a Neural Network.
+
+For its training data, the network uses a problem definition as its input, and the binary statement as to whether or not the problem is satisfiable as its output. It is trained using SAT problems that are very simple and thus have already been solved using traditional methods. The network can also provide a possible parameter set for satisfiable problems with a relatively high degree of accuracy (96%). On top of this, when requesting a solution to a SAT problem, the network typically returns the simplest solution possible, largely due to it being trained on a relatively simple set of problems. Thus, this allows for testing on these solutions to be conducted at a faster speed.
+
 * **March - [Humans can decipher adversarial images](https://www.nature.com/articles/s41467-019-08931-6.pdf)**
 
 Though recent Convolutional Neural Network systems have surpassed human performance in image detection problems, a problem does remain - simply modifying a pixel or two in the image can cause the system to classify the image as something vastly different. For example, reconfiguring a pixel or two is all it takes for a computer to classify an apple as a car. This ability to ‘fool’ image recognition systems has been criticised as an indication that such systems are unable to interpret images in the same manner as a human would, though a recent paper suggests that this may not be the case.
