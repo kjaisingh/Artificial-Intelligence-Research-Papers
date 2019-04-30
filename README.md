@@ -25,7 +25,7 @@ This AI is a able to generate realistic images from a set of controllable patter
 
 This technique allows us to edit more specific factors - for example, put a smile on someone’s face or remove the sunglasses of an individual. Colour can also be changed - for example, the colour of one’s eye can be manipulated. It is extremely fast, and takes just 50 milliseconds to create these images with 512 x 512 images. 
 
-It has applications in the editing industry in filmmaking, but can also be used by novel consumers who are looking for simple edits to their photos. Though no web app is currently available, it does have its source code publicly-available.
+It has applications in the editing industry in filmmaking, but can also be used by novel consumers who are looking for simple edits to their photos. Though no web app is currently available, it does have its source code publicly-available.<br/>
 
 * **February - [Deep Planning Network (PlaNet)](https://www.nature.com/articles/s41467-019-08931-6.pdf)**
 
@@ -33,7 +33,7 @@ Google’s PlaNet AI is intended to learn how to plan a sequence of steps that i
 
 The AI uses a sparse reward method, which means that it barely gets feedback with regards to its performance on these tasks. The key difference, however, between this and classical Reinforcement Learning methods is that this AI uses models for its learning. This means that it doesn’t learn every new task from scratch, but rather uses its rudimentary understanding that it has gained from previous activities (such as the nature of gravity), and applies this in future ones. Thus, it has a head-start when learning it a game, making it often 50 times more efficient than techniques that begin with learning from scratch.
 
-It significantly outperforms other state-of-the-art AI systems in most tasks, such as a cheetah run or human walk. This agent doesn’t require separate training for each activity, as it intermixes its training. Also, it can use just 5 frames of reference for a particular activity in order to learn it, with equates to approximately a fifth of a second of footage. It can then learn how to continue with this activity over a longer period of time.
+It significantly outperforms other state-of-the-art AI systems in most tasks, such as a cheetah run or human walk. This agent doesn’t require separate training for each activity, as it intermixes its training. Also, it can use just 5 frames of reference for a particular activity in order to learn it, with equates to approximately a fifth of a second of footage. It can then learn how to continue with this activity over a longer period of time.<br/>
 
 * **February - [NeuroSAT](https://arxiv.org/pdf/1802.03685.pdf)**
 
@@ -43,7 +43,17 @@ We can take an example: F is true if A is true and not B is true. In this case, 
 
 When humans try to solve big and complex problems, there is not much of a better method than arbitrary guessing, which would take a nearly infinite amount of time for longer and more complex problems. NeuroSAT, however, solves these problems through the use of a Neural Network.
 
-For its training data, the network uses a problem definition as its input, and the binary statement as to whether or not the problem is satisfiable as its output. It is trained using SAT problems that are very simple and thus have already been solved using traditional methods. The network can also provide a possible parameter set for satisfiable problems with a relatively high degree of accuracy (96%). On top of this, when requesting a solution to a SAT problem, the network typically returns the simplest solution possible, largely due to it being trained on a relatively simple set of problems. Thus, this allows for testing on these solutions to be conducted at a faster speed.
+For its training data, the network uses a problem definition as its input, and the binary statement as to whether or not the problem is satisfiable as its output. It is trained using SAT problems that are very simple and thus have already been solved using traditional methods. The network can also provide a possible parameter set for satisfiable problems with a relatively high degree of accuracy (96%). On top of this, when requesting a solution to a SAT problem, the network typically returns the simplest solution possible, largely due to it being trained on a relatively simple set of problems. Thus, this allows for testing on these solutions to be conducted at a faster speed.<br/>
+
+* **March - [Semantic Image Normalisation with SPACE](https://arxiv.org/pdf/1903.07291.pdf)**
+
+This paper describes a network that is able to generate high resolution images from simple drawings. Using this network, you could draw in a blue rectangle and the outline of a tree using the network’s sketching application, and the network would generate an image with an ocean and a tree.
+
+The paper also provides numerous templates for the base of your image - for example, you can choose to base your image on a city skyline, an ocean view or a hilly region. The paper refers to the manipulations added by a user as ‘semantics’, and the templates used to base the image on as ‘reference style images’. 
+
+Rather than having to hire individuals to label every type of object in thousands of images of scenery, the algorithm uses pre-existing labelling algorithms to label items in an image, allowing it to have as much training data as the number of images that it can source. 
+
+The paper ultimately relies on a technique known as spatially-adaptive denormalisation (SPACE), rather than regular normalisation layers, to help achieve its high-resolution outputs. Just like batch normalisation, the activations are normalised in a channel-wise manner, and then modulated with known scale and bias. However, in SPACE, the modulation parameters vary with respect to the location on the image. This allows it to better preserve semantic information against common normalisation layers, which often simply wash away semantic information.<br/>
 
 * **March - [Humans can decipher adversarial images](https://www.nature.com/articles/s41467-019-08931-6.pdf)**
 
