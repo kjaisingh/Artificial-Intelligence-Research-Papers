@@ -10,6 +10,7 @@
 
 ## 2019
 * **April - [Speech synthesis from Neural Activity](https://www.nature.com/articles/s41586-019-1119-1#Abs1)**
+
 Researchers at UC Berkeley (UCB) and UC San Fransisco (UCSF) have created a system with the ability decipher brain signals and create speech from these. The system is intended to improve the ability of those with impaired voices to speak in an audible, human-like manner. It is the newest revelation in brain-machine interface technology, a rising field.
 
 Decoding speech from neural activity is a particularly difficult problem because the act of speaking requires very precise and rapid control of our vocal tract articulators. The system uses a Recurrent Neural Network (RNN) to translate cortical activity (i.e. brain signals) into representations of commands for the movement of these vocal articulators. These brain signals are detected via the placement of a stamp-sized pad, with hundreds of tiny electrodes, at the surface of a human brain. It then uses RNNs once again to transform these commands into speech acoustics. 
