@@ -9,6 +9,15 @@
 
 
 ## 2019
+* **April - [Speech synthesis from Neural Activity](https://www.nature.com/articles/s41586-019-1119-1#Abs1)**
+Researchers at UC Berkeley (UCB) and UC San Fransisco (UCSF) have created a system with the ability decipher brain signals and create speech from these. The system is intended to improve the ability of those with impaired voices to speak in an audible, human-like manner. It is the newest revelation in brain-machine interface technology, a rising field.
+
+Decoding speech from neural activity is a particularly difficult problem because the act of speaking requires very precise and rapid control of our vocal tract articulators. The system uses a Recurrent Neural Network (RNN) to translate cortical activity (i.e. brain signals) into representations of commands for the movement of these vocal articulators. These brain signals are detected via the placement of a stamp-sized pad, with hundreds of tiny electrodes, at the surface of a human brain. It then uses RNNs once again to transform these commands into speech acoustics. 
+
+In clinical tests, as much as 70 percent of what was spoken by the virtual system was intelligible. The RNN is able to perform relatively well because articulatory representations were found to be highly similar across speakers, enabling a component of the decoder to be transferrable.
+
+With continued progress in this domain, scientists can hope that individuals with speech impairments will regain the ability to freely speak their minds and reconnect with the world around them.
+
 * **March - [Semantic Image Normalisation with SPACE](https://arxiv.org/pdf/1903.07291.pdf)**
 
 This paper describes a network that is able to generate high resolution images from simple drawings. Using this network, you could draw in a blue rectangle and the outline of a tree using the network’s sketching application, and the network would generate an image with an ocean and a tree.
