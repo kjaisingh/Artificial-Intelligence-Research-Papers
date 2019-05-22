@@ -45,7 +45,7 @@ The paper ultimately relies on a technique known as spatially-adaptive denormali
 
 * **March - [The Lottery Ticket Hypothesis](https://arxiv.org/pdf/1803.03635.pdf)**
 
-TPruning refers to selectively eliminating parts of a neural network by removing particular parameters in order to create a smaller network with fewer parameters which must be trained. Pruning techniques in the past have been largely unsuccessful - even papers by pioneers like Yann LeCun and Geoffery Hinton have been unable to come close to matching the performance of the entire network with a pruned network.
+Pruning refers to selectively eliminating parts of a neural network by removing particular parameters in order to create a smaller network with fewer parameters which must be trained. Pruning techniques in the past have been largely unsuccessful - even papers by pioneers like Yann LeCun and Geoffery Hinton have been unable to come close to matching the performance of the entire network with a pruned network.
 
 The lottery-ticket hypothesis, which was the winning paper of ICLR 2019, suggests that a randomly-initialized, dense neural network contains a subnetwork that is initialized such that - when trained in isolation - it can match the test accuracy of the original network after training for at most the same number of iterations. It relies on a standard pruning technique which automatically identifies such trainable subnetworks (known as the ‘winning tickets’) by eliminating parameters (and thus network connections) which contribute least to the overall output of the network. It takes the following steps:
 1. Randomly initialize a neural network.
