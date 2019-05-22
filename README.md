@@ -43,6 +43,22 @@ Rather than having to hire individuals to label every type of object in thousand
 
 The paper ultimately relies on a technique known as spatially-adaptive denormalisation (SPACE), rather than regular normalisation layers, to help achieve its high-resolution outputs. Just like batch normalisation, the activations are normalised in a channel-wise manner, and then modulated with known scale and bias. However, in SPACE, the modulation parameters vary with respect to the location on the image. This allows it to better preserve semantic information against common normalisation layers, which often simply wash away semantic information.<br/>
 
+* **March - [The Lottery Ticket Hypothesis](https://arxiv.org/pdf/1803.03635.pdf)**
+
+TPruning refers to selectively eliminating parts of a neural network by removing particular parameters in order to create a smaller network with fewer parameters which must be trained. Pruning techniques in the past have been largely unsuccessful - even papers by pioneers like Yann LeCun and Geoffery Hinton have been unable to come close to matching the performance of the entire network with a pruned network.
+
+The lottery-ticket hypothesis, which was the winning paper of ICLR 2019, suggests that a randomly-initialized, dense neural network contains a subnetwork that is initialized such that - when trained in isolation - it can match the test accuracy of the original network after training for at most the same number of iterations. It relies on a standard pruning technique which automatically identifies such trainable subnetworks (known as the ‘winning tickets’) by eliminating parameters (and thus network connections) which contribute least to the overall output of the network. It takes the following steps:
+1. Randomly initialize a neural network.
+2. Train the network for j iterations, arriving at a certain distribution of parameters. 
+3. Prune the p% of parameters with the lowest absolute value in this network.
+4. Reinitialise the remaining parameters to their values in the original, randomly-initialized network, leaving you with the ‘winning ticket’ network.
+
+Once this pruned network has created, the paper shows that the performance of the smaller network is on par with that of the entire network. Aggressively pruned networks, where 95 to 99 percent of parameters are pruned, showed no dip in performance in comparison to the original network. However, moderately pruned networks, where 50 to 90 percent of parameters are pruned, were able to even exceed performance of their unpruned counterparts.
+
+The pruning technique described above is one-shot, as the unpruned network is trained just once. The paper, however, indicates that a more effective variation of this is to utilise iterative pruning - this relies on pruning the network over n rounds, and at each round pruning p/n% of the parameters.
+
+The hypothesis provided by the paper is intended to not only significantly reduce the number of parameters that a network must train, thus greatly reducing training time as well, but also allowing us to design better overall networks with less unnecessary noise. <br/>
+
 * **March - [Humans can decipher adversarial images](https://www.nature.com/articles/s41467-019-08931-6.pdf)**
 
 Though recent Convolutional Neural Network systems have surpassed human performance in image detection problems, a problem does remain - simply modifying a pixel or two in the image can cause the system to classify the image as something vastly different. For example, reconfiguring a pixel or two is all it takes for a computer to classify an apple as a car. This ability to ‘fool’ image recognition systems has been criticised as an indication that such systems are unable to interpret images in the same manner as a human would, though a recent paper suggests that this may not be the case.
@@ -52,6 +68,7 @@ In the paper, a pair of cognitive psychologists showed a group of over 1800 subj
 Next, the researchers gave subjects a choice between the system’s answer and its next-best guess for images it guessed incorrectly. Once again, the subjects again validated the computer's choices - 91 percent of those tested agreed with the system’s decision.
 
 The study thus provides a degree of evidence that the apparent flaw with Convolutional Neural Network architectures may not be as bad as many think. It provides a new perspective, along with a new experimental paradigm that can be explored.<br/>
+
 * **February - [SC-FEGAN: Face-Editing GAN](https://arxiv.org/pdf/1902.06838.pdf)**
 
 This AI is a able to generate realistic images from a set of controllable patterns. It builds on a couple of previous papers in the field - the first is the paper that generates an image from a sparse description (such as a written sentence, and the second is the paper which allows for facial features on images to be customised (such as merging two different faces).
