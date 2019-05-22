@@ -9,6 +9,20 @@
 
 
 ## 2019
+* **May - [Adversarial features are not bugs, they are features](https://arxiv.org/pdf/1905.02175.pdf)**
+
+This paper attacks one of the most prominent criticisms of neural networks - the fact that adversarial examples are flaws in the performance of such networks.
+
+Adversarial examples are imperceptibly altered natural inputs that induce incorrect predictions by image classifiers. The reason as to why such examples exist has been researched in great depth, though no theories have so far been able to truly capture the phenomena seen in practise.
+
+The paper demonstrates that adversarial examples are the direct product of the identification by classifiers of non-robust features - features derived from patterns in the data that are highly predictive, yet brittle and incomprehensible to humans. An example would be an image of a panda - while a human would typically associate a panda with its short tail or its well-rounded ears, an image classifier may identify a non-robust feature which it believes to be highly predictive, say the shape of its thumb.
+
+The paper postulates that classification models learn to rely on such non-robust features to make their predictions, which lead to adversarial examples that are able to exploit this dependence. This is because we usually train classifiers to solely maximize accuracy - thus, classifiers tend to use any available signal to do so, even those that look incomprehensible to humans. After all, the presence of a tail or ears is no more natural to a classifier than any other equally predictive pattern. 
+
+The hypothesis also provides a solution to the problem of adversarial transferability, or the idea that the adversarial examples that can be applied to one model can usually also be applied on another. This is because models tend to learn common features- if a non-robust feature is one that helps identify an image, it would be learnt by any model. 
+
+Lastly, the paper suggests that methods aiming to enhance the interpretability of a given model by attempting to reduce such non-robust features actually reduce the interpretability of a model. As such, producing human-meaningful explanations must be pursued independently from the training of highly-accurate models.<br/>
+
 * **April - [Speech synthesis from Neural Activity](https://www.nature.com/articles/s41586-019-1119-1#Abs1)**
 
 Researchers at UC Berkeley (UCB) and UC San Fransisco (UCSF) have created a system with the ability decipher brain signals and create speech from these. The system is intended to improve the ability of those with impaired voices to speak in an audible, human-like manner. It is the newest revelation in brain-machine interface technology, a rising field.
