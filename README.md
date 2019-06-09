@@ -9,6 +9,16 @@
 
 
 ## 2019
+* **June - [Energy and Policy Considerations for Deep Learning in NLP](https://arxiv.org/pdf/1906.02243.pdf)**
+
+Training state-of-the-art models today requires a significant amount of computational resources, which in turn consumes significants amount of energy, which would emit a significant amount of carbon when generated. Newer models and methods, which rely on re-training to optimise architectures and hyper-parameters, significantly increase the cost of training. 
+
+Research finds that while a car consumes 126,000 pounds of CO2 in its lifetime, training a single, large NLP model with an optimal neural architecture search on a GPU requires about 626,000 pounds of CO2 - over 5 times that of a car. This is largely due to the energy required to power the model, which often takes weeks or even months. Though climate research suggests that humanity must cut carbon emissions by half over the next decade, this may become increasingly difficult should training neural networks become the norm.
+
+The paper assigns a dollar cost to training a variety of state-of-the-art NLP models, which is calculated by finding the energy required to train each model, and then finding the associated electricity cost. The first finding is that TPUs are more cost-efficient than GPUs on mid-sized models. The next is that NLP models are extremely harmful to the environment - training a GPU on, say, a BERT model emits approximately the same amount of Carbon as a trans-American flight.  
+
+The paper concludes by recommending that researchers consider energy emissions during their model creations, as well as encouraging a more equitable access to computational resources.
+
 * **May - [Adversarial features are not bugs, they are features](https://arxiv.org/pdf/1905.02175.pdf)**
 
 This paper attacks one of the most prominent criticisms of neural networks - the fact that adversarial examples are flaws in the performance of such networks.
@@ -23,7 +33,7 @@ The hypothesis also provides a solution to the problem of adversarial transferab
 
 Lastly, the paper suggests that methods aiming to enhance the interpretability of a given model by attempting to reduce such non-robust features actually reduce the interpretability of a model. As such, producing human-meaningful explanations must be pursued independently from the training of highly-accurate models.<br/>
 
-* **April - [Speech synthesis from Neural Activity](https://www.nature.com/articles/s41586-019-1119-1#Abs1)**
+* **April - [Speech synthesis from neural decoding of spoken sentences](https://www.nature.com/articles/s41586-019-1119-1#Abs1)**
 
 Researchers at UC Berkeley (UCB) and UC San Fransisco (UCSF) have created a system with the ability decipher brain signals and create speech from these. The system is intended to improve the ability of those with impaired voices to speak in an audible, human-like manner. It is the newest revelation in brain-machine interface technology, a rising field.
 
