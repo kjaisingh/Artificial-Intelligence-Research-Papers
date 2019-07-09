@@ -33,6 +33,24 @@ The hypothesis also provides a solution to the problem of adversarial transferab
 
 Lastly, the paper suggests that methods aiming to enhance the interpretability of a given model by attempting to reduce such non-robust features actually reduce the interpretability of a model. As such, producing human-meaningful explanations must be pursued independently from the training of highly-accurate models.<br/>
 
+* **May - [Few-Shot Adversarial Learning of Realistic Neural Talking Head Models](https://arxiv.org/pdf/1905.08233v1.pdf)**
+
+This paper describes a few-shot (utilises a small handful of input images) and one-shot (utilises just one input image) technique to make humans in portrait images appear to be talking. It outperforms all other existing models in this manner, as it can make realistic videos of portraits such as that of Mona Lisa and Marilyn Monroe.
+
+This paper employs an architecture that is composed of three distinct neural networks which work in tandem. The first is an ‘Embedder’, which takes coloured images and identifies that landmark items within such images, such as eyes and ears. It then compresses the information regarding the position of such items, and feeds this into the ‘Generator’ network. This network takes in information regarding the position of landmark items, and then generates an image that corresponds to such landmarks. The ‘Discriminator’, the final network, then compares the base input image to the generated image, and outputs a ‘Realism score’ which indicates how similar the synthesised image is to its base image. This score is used to improve the performance of both the Embedder and Generator.
+
+The authors of the paper believe that the paper can help make VR and AR communication more realistic and compelling, as the avatars created can be of a far better overall quality. They also recognise, however, that such a technology can be used to create ‘deep fake’ videos, which are artificially generated videos of individuals doing or saying something that they didn’t actually do or say.<br/>
+
+* **April - [Vid2Game: Controllable Characters Extracted from Real-World Videos](https://arxiv.org/pdf/1904.08379.pdf)**
+
+Pose estimation is a technique that takes a video featuring humans as input, and creates a mapping of the current position of the human which is bounded to their body. 
+
+This paper describes an algorithm which utilises pose estimation, but allows for the poses created to be controllable - for example, if the ‘right’ key is pressed on the keyboard after a human pose has been identified, that human simulation will move rightwards in a human-like manner.
+
+This allows for implementation in video games - an input video of a human can be obtained, then it can be fed into the algorithm, after which it can be controlled by a human gamer in order to achieve a particular goal.
+
+Its Pose2Frame capabilities makes it able to blend poses of humans into varying backgrounds. Thus, not only can the pose of a human be implemented into a virtual world with a different surrounding, it can be made to move naturally in such an environment. <br/>
+
 * **April - [Speech synthesis from neural decoding of spoken sentences](https://www.nature.com/articles/s41586-019-1119-1#Abs1)**
 
 Researchers at UC Berkeley (UCB) and UC San Fransisco (UCSF) have created a system with the ability decipher brain signals and create speech from these. The system is intended to improve the ability of those with impaired voices to speak in an audible, human-like manner. It is the newest revelation in brain-machine interface technology, a rising field.
